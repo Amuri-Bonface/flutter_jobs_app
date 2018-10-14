@@ -1,0 +1,76 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter create android
+
+## exception
+
+FileSystemException: FileSystemException: Cannot retrieve modification time, path = 'C:\Users\AMULI\Downloads\flutter_jobs_app-master\flutter_jobs_app-master\android\pubspec.yaml' (OS Error: The system cannot find the file specified.
+, errno = 2)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:647:7)
+#1      _File.lastModifiedSync (dart:io/file_impl.dart:451:5)
+#2      _LocalFile&LocalFileSystemEntity&ForwardingFile.lastModifiedSync (package:file/src/forwarding/forwarding_file.dart:54:43)
+#3      pubGet (package:flutter_tools/src/dart/pub.dart:122:59)
+<asynchronous suspension>
+#4      CreateCommand._generateApp (package:flutter_tools/src/commands/create.dart:315:13)
+<asynchronous suspension>
+#5      CreateCommand.runCommand (package:flutter_tools/src/commands/create.dart:172:37)
+<asynchronous suspension>
+#6      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:372:18)
+#7      _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#8      _rootRunUnary (dart:async/zone.dart:1132:38)
+#9      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#10     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#11     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#12     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#13     Future._complete (dart:async/future_impl.dart:476:7)
+#14     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#15     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#16     _rootRun (dart:async/zone.dart:1124:13)
+#17     _CustomZone.run (dart:async/zone.dart:1021:19)
+#18     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#19     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#20     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#21     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#22     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.8.2, on Microsoft Windows [Version 6.1.7601], locale en-US)
+    • Flutter version 0.8.2 at C:\src\flutter
+    • Framework revision 5ab9e70727 (5 weeks ago), 2018-09-07 12:33:05 -0700
+    • Engine revision 58a1894a1c
+    • Dart version 2.1.0-dev.3.1.flutter-760a9690c2
+
+[!] Android toolchain - develop for Android devices (Android SDK 27.0.3)
+    • Android SDK at C:\Users\AMULI\AppData\Local\Android\sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 27.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+    ✗ Android license status unknown.
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 28.0.1
+    • Dart plugin version 173.4700
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+
+[!] IntelliJ IDEA Community Edition (version 2016.3)
+    • IntelliJ at C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.3.5
+    ✗ Flutter plugin version 12.1 - the recommended minimum version is 16.0.0
+    • Dart plugin version 163.13137
+    • For information about installing plugins, see
+      https://flutter.io/intellij-setup/#installing-the-plugins
+    ✗ This install is older than the minimum recommended version of 2017.1.0.
+
+[✓] Connected devices (1 available)
+    • GT I9082 • 192.168.8.101:5555 • android-arm • Android 7.1.2 (API 25)
+
+! Doctor found issues in 2 categories.
+```
