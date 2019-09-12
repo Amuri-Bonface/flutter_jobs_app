@@ -1,7 +1,5 @@
 # Flutter Jobs App
 
-## note : the app is not working now because of some changes in the web site and i will work on it soon but you can still benfit from the code in this repo 
-
  flutter job board app for Android/IOS using Flutter in this app a fetched the informations from the [flutter jobs website](https://flutterjobs.info/) and i tried to make everything custom from the **Drawer** to **Item** and it's a good example if you are trying to understand :
  * Web Scraping Using Dart
  * fetch data with authorization header
@@ -31,15 +29,9 @@ Please :star: this repo and share it with others
 
 
 
-### Created 
-
-* [Raouf Rahiche](https://github.com/Rahiche) 
-* ([@raoufrahiche](https://twitter.com/raoufrahiche)) 
-* ([Youtube](https://www.youtube.com/channel/UCal0wCIwkxiKcrYPvBS6RiA))
-
 # License
 
-    Copyright 2018 Raouf Rahiche
+    Copyright 2018 
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
